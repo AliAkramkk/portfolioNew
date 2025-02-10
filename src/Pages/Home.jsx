@@ -1,10 +1,43 @@
+import React, { useState } from "react";
 import HeroBackground from "../components/HeroBackground"
 import dp from '../assets/Images/ali1.png'
+import bg from '../assets/Images/bg.jpg'
 import ServicesSection from "../components/ServicesSection";
+import Modal from "../components/Modal";
+import react from '../assets/Images/React.png'
+import node from '../assets/Images/node.png'
+import mongo from '../assets/Images/mongo.png'
+import tailwind from '../assets/Images/tailwind.png'
+
+
+
+
 const Home = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  const techStack = [
+    { name: "React", image: react },
+    { name: "MongoDB", image: mongo },
+    { name: "Node.js", image: node },
+    { name: "Tailwind", image: tailwind },
+  ];
+
+  const links = [
+    { label: "GitHub", url: "https://github.com/yourusername" },
+    { label: "LinkedIn", url: "https://linkedin.com/in/yourusername" },
+    { label: "email", url: "akramkorakkottil@gmail.com" },
+    { label: "tel", url: "9946921752" },
+  ];
+
+
   return (
     <>
-    <div className="relative bg-gradient-to-r from-gray-900 to-slate-800 text-white min-h-screen flex items-center">
+    <div className="relative text-white min-h-screen flex items-center bg-cover"style={{ backgroundImage: `url(${bg})` }}>
     <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
@@ -17,8 +50,10 @@ const Home = () => {
         </p>
         <div className="relative inline-block mt-6">
   {/* <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-pink-500 to-blue-500 -z-10"></div> */}
-  <button className="px-6 py-3 text-white border-2  border-gradient border-[#f09cf0] bg-gradient rounded-2xl shadow-md hover:bg-transparent transition-all hover:border-[#581258]">
-
+  <button 
+  onClick={handleModalToggle}
+  className="px-6 py-3 text-white border-2  border-gradient border-[#f09cf0] bg-gradient rounded-2xl shadow-md hover:bg-transparent transition-all hover:border-[#581258]">
+  
    About Me
   </button>
 </div>
@@ -33,6 +68,22 @@ const Home = () => {
       </div>
     </div>
     </div>
+
+    <Modal
+        isOpen={isModalOpen}
+        onClose={handleModalToggle}
+        title="About Me"
+        techStack={techStack}
+        links={links}
+      >
+        <p>
+          Hello! I am Ali Akram Khan, a passionate web developer with expertise
+          in building responsive and visually appealing applications. I
+          specialize in the MERN stack and enjoy crafting seamless user
+          experiences.
+        </p>
+      </Modal>
+
       {/* Projects Section */}
       {/* <section className="py-16 px-8 bg-gray-100">
         <h2 className="text-3xl font-semibold text-center">Projects</h2>

@@ -1,5 +1,7 @@
 import React from 'react';
 import lap from '../assets/Images/lap1.png';
+import lap2  from '../assets/Images/lap2.png';
+import lap3  from '../assets/Images/lap4.png';
 
 const ServicesSection = () => {
   return (
@@ -27,7 +29,7 @@ const ServicesSection = () => {
 
         {/* Project 2 */}
         <div className=" flex flex-row md:flex-row items-center space-y-4 md:mt-96 md:space-x-4">
-          <img src={lap} alt="laptop" className="w-40 md:w-96" />
+          <img src={lap3} alt="laptop" className="w-40 md:w-96" />
           <p className="font-thin p-3">
             145Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
           </p>
@@ -35,7 +37,7 @@ const ServicesSection = () => {
 
         {/* Project 3 */}
         <div className="flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
-          <img src={lap} alt="laptop" className="w-40 md:w-96" />
+          <img src={lap2} alt="laptop" className="w-40 md:w-96" />
           <p className="font-thin p-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
           </p>
