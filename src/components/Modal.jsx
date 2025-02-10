@@ -35,7 +35,7 @@ const Modal = ({ isOpen, onClose, title, techStack, links,children }) => {
           <div className="flex flex-wrap justify-center items-center space-x-6">
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/aliakramkh/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 hover:opacity-80"
