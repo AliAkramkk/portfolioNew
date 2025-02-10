@@ -1,32 +1,59 @@
-import React from 'react'
-import lap from '../assets/Images/lap1.png'
+import React from 'react';
+import lap from '../assets/Images/lap1.png';
+
 const ServicesSection = () => {
   return (
-    <section className="bg-gray-900 text-white py-10 ">
-<div className='container mx-auto px-6'>
-<h1 className='text-2xl md:text-4xl md:text-center font-mono text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 '>My Work</h1>
-</div>
-<div className='flex flex-col justify-between  space-y-12  md:space-x-12 '>
-  <div className=' flex flex-1 md:space-y-2 justify-center items-center space-y-12 md:space-x-12 md:w-1/2'>
-    <img src={lap} alt="laptop image"  className='w-40 md:w-96' />
-    <p className=' font-bold mb-'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?</p>
-  </div>
-  <div className=' flex flex-1 md:space-y-2 justify-center items-center space-y-12 md:space-x-12 md:w-2/3'>
-    <img src={lap} alt="laptop image"  className='w-40 md:w-96' />
-    <p className=' font-bold mb-'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?</p>
-  </div>
-  <div className=' flex flex-1 md:space-y-2 justify-center items-center space-y-12 md:space-x-12'>
-    <img src={lap} alt="laptop image"  className='w-40 md:w-96' />
-    <p className=' font-bold mb-'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?</p>
-  </div>
-</div>
-</section>
-);
+    <section className="bg-gray-900 text-white py-10">
+      <div className="container mx-auto px-6">
+        <h1 className="text-2xl md:text-4xl md:text-center font-mono text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
+          My Work
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-3 relative">
+        {/* Center Line */}
+        <div className="hidden md:block absolute inset-0 w-0.5 bg-gray-500 mx-auto"></div>
+
+        {/* Project 1 */}
+        <div className="md:absolute flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 md:w-1/2">
+          <img src={lap} alt="laptop" className="w-40  md:w-96" />
+          <p className="font-thin p-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
+          </p>
+          <div
+      className="hidden md:block my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50">
+      </div>
+        </div>
+
+        {/* Project 2 */}
+        <div className=" flex flex-row md:flex-row items-center space-y-4 md:mt-96 md:space-x-4">
+          <img src={lap} alt="laptop" className="w-40 md:w-96" />
+          <p className="font-thin p-3">
+            145Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
+          </p>
+        </div>
+
+        {/* Project 3 */}
+        <div className="flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+          <img src={lap} alt="laptop" className="w-40 md:w-96" />
+          <p className="font-thin p-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
+          </p>
+        </div>
+
+        {/* Project 4 */}
+        <div className=" hidden flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4">
+          <img src={lap} alt="laptop" className="w-40 md:w-96" />
+          <p className="font-bold">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 
-
-export default ServicesSection
-
+export default ServicesSection;
 
 
 
