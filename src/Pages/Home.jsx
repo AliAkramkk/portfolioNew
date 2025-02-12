@@ -44,11 +44,11 @@ const Home = () => {
     <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h1 className="text-4xl md:text-6xl font-mono leading-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
+        <h1 className="text-4xl md:text-6xl font-mono leading-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
           Frontend <br /> <span>Developer</span>
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-300">
-          I am Ali Akram Khan – a web developer with a passion for creating
+          I am <span className="md:text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">Ali Akram Khan </span>– a web developer with a passion for creating
           beautiful and responsive websites.
         </p>
         <div className="relative inline-block mt-6">
