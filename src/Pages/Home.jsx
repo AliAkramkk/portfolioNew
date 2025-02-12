@@ -10,6 +10,7 @@ import node from '../assets/Images/node.png'
 import mongo from '../assets/Images/mongo.png'
 import tailwind from '../assets/Images/tailwind.png'
 import TestimonialSlider from "../components/TestimonialSlider";
+import ContactForm from "../components/ContactForm";
 
 
 
@@ -90,53 +91,7 @@ const Home = () => {
 
       <ServicesSection />
 
-      {/* Contact Section */}
-{/* <TestimonialSlider /> */}
-
-      <section className="py-16 px-8 bg-white  bg-cover"style={{ backgroundImage: `url(${bg2})` }}>
-        <h2 className="text-3xl font-semibold text-center text-white">Contact Me</h2>
-        <form className="mt-8 max-w-lg mx-auto">
-          <div className="mb-4">
-            <label className="block text-gray-100 font-medium" htmlFor="name">
-              Name
-            </label>
-            <input
-              type="text"
-              id="name"
-              className="w-full mt-2 p-3 border border-gray-300 rounded-lg"
-              placeholder="Your name"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-100 font-medium" htmlFor="email">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className="w-full mt-2 p-3 border border-gray-200 rounded-lg"
-              placeholder="Your email"
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-100 font-medium" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows="4"
-              className="w-full mt-2 p-3 border border-gray-300 rounded-lg"
-              placeholder="Your message"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-gray-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-600"
-          >
-            Send Message
-          </button>
-        </form>
-      </section>
+   <ContactForm />
 
       <footer className="bg-gray-900 text-white py-4 text-center">
         <p>&copy; 2025 Ali Akram Khan. All rights reserved.</p>

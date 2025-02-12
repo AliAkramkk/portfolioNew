@@ -4,6 +4,8 @@ import lap2  from '../assets/Images/lap2.png';
 import lap3  from '../assets/Images/lap4.png';
 import bg from '../assets/Images/bg 1.jpg';
 import TestimonialSlider from './TestimonialSlider';
+import { motion } from "framer-motion";   
+
 
 
 const ServicesSection = () => {
@@ -25,8 +27,16 @@ const ServicesSection = () => {
 
         {/* Project 1 */}
         <div className="md:absolute flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:w-1/2">
-          <img src={lap} alt="laptop" className="w-40  md:w-96" />
-          <p className="font-thin p-3 md:bg-black  md:space-x-1">
+        <a href="https://www.skepinteriors.com/" target="_blank" rel="noopener noreferrer">
+        <motion.div
+  className="relative"
+  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+>
+          <img src={lap} alt="laptop" className="w-40  md:w-[900px] hover:" />
+          </motion.div>
+          </a>
+          <p className="font-thin p-3 md:bg-black  md:space-x-1 md:w-[400px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
           </p>
           <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform -translate-y-1" />
@@ -45,8 +55,16 @@ const ServicesSection = () => {
       
         {/* Project 2 */}
         <div className=" flex flex-row md:flex-row items-center space-y-4 md:mt-96 ">
-          <img src={lap3} alt="laptop" className="w-40 md:w-96" />
-          <p className="font-thin p-3 md:bg-black md:rounded-xl">
+        <a href="https://www.goldenwater-emirates.com/" target="_blank" rel="noopener noreferrer">
+        <motion.div
+  className="relative"
+  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+>
+          <img src={lap3} alt="laptop" className="w-40 md:w-[900px]" />
+          </motion.div>
+          </a>
+          <p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px]">
             145Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
           </p>
           <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform translate-x-5" />
@@ -65,7 +83,7 @@ const ServicesSection = () => {
        <div className="relative">
   {/* The clickable dot */}
   <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
-    <div className="hidden md:block absolute -right-90 bg-gray-200 rounded-full w-3 h-3 transform -translate-x-[90px] -translate-y-4 hover:bg-gradient-to-r from-pink-500 to-blue-500">
+    <div className="hidden md:block absolute -right-90 bg-gray-200 rounded-full w-3 h-3 transform -translate-x-[155px] -translate-y-4 hover:bg-gradient-to-r from-pink-500 to-blue-500">
       {/* Tooltip or label that appears on hover */}
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
    visit ClientsMaker
@@ -75,10 +93,18 @@ const ServicesSection = () => {
 </div>
 
          
-          <p className="font-thin p-3 md:bg-black md:rounded-xl ">
+          <p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
           </p>
-          <img src={lap2} alt="laptop" className="w-40 md:w-96" />
+          <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
+          <motion.div
+  className="relative"
+  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
+  transition={{ duration: 0.5, ease: "easeInOut" }}
+>
+          <img src={lap2} alt="laptop" className="w-40 md:w-[900px]" />
+          </motion.div>
+          </a>
         </div>
 
         {/* Project 4 */}
