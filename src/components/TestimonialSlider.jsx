@@ -2,7 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ali from "../assets/Images/ali.jpg";
+import ali from "../assets/Images/ikka.jpg";
+import ali2 from "../assets/Images/test2.jpg";
+import ali3 from "../assets/Images/test3.jpg";
 
 const TestimonialSlider = () => {
   const settings = {
@@ -19,9 +21,9 @@ const TestimonialSlider = () => {
   const testimonials = [
     {
       id: 1,
-      name: "John Doe",
-      text: "This is an amazing service! Highly recommended.",
-      role: "Software Engineer",
+      name: "Akmel Ali",
+      text: "I am happy with his services, and he delivered them on time",
+      role: "Buisness Growth Manager",
       img: ali,
     },
     {
@@ -29,20 +31,20 @@ const TestimonialSlider = () => {
       name: "Jane Smith",
       text: "I am extremely satisfied with the quality and support provided.",
       role: "Product Manager",
-      img: ali,
+      img: ali2,
     },
     {
       id: 3,
       name: "Michael Brown",
       text: "Professional and reliable, couldn’t ask for more!",
       role: "Business Owner",
-      img: ali,
+      img: ali3,
     },
   ];
 
   return (
     <div className="text-black py-10 bg-cover bg-black">
-      <div className="max-w-2xl mx-auto p-3 rounded-lg shadow-md bg-gray-200">
+      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3 rounded-lg shadow-md bg-gradient-to-r from-gray-500 to-red-300">
         <h2 className="text-2xl font-bold text-center mb-6">Testimonials</h2>
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
@@ -51,7 +53,7 @@ const TestimonialSlider = () => {
                 <img
                   src={testimonial.img}
                   alt="user"
-                  className="w-16 h-16 rounded-full"
+                  className="w-24 h-24 rounded-full"
                 />
                 <div className="ml-4 text-left">
                   <h3 className="text-xl font-semibold">{testimonial.name}</h3>

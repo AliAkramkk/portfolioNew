@@ -33,12 +33,18 @@ const ServicesSection = () => {
   whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
   transition={{ duration: 0.5, ease: "easeInOut" }}
 >
-          <img src={lap} alt="laptop" className="w-40  md:w-[900px] hover:" />
+          <img src={lap} alt="laptop" className="w-60  md:w-[900px] hover:" />
           </motion.div>
           </a>
-          <p className="font-thin p-3 md:bg-black  md:space-x-1 md:w-[400px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
-          </p>
+          <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
+  <span className="block md:hidden">
+    Skep is a single-page application built from a Figma design, utilizing React, Framer Motion, and Tailwind CSS for smooth animations.
+  </span>
+  <span className="hidden md:block">
+    This project, Skep, was built using React, Framer Motion, and Tailwind CSS, based on a Figma design. It is a single-page application that demonstrates smooth animations, responsive design, and an engaging user experience.
+  </span>
+</p>
+
           <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform -translate-y-1" />
           <a href="https://www.skepinteriors.com/" target="_blank" rel="noopener noreferrer">
           <div className="hidden md:block absolute right-0 bg-gray-200 rounded-full w-3 h-3 transform translate-x-2 translate-y-10 hover:bg-gradient-to-r from-pink-500 to-blue-500">
@@ -61,12 +67,19 @@ const ServicesSection = () => {
   whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
   transition={{ duration: 0.5, ease: "easeInOut" }}
 >
-          <img src={lap3} alt="laptop" className="w-40 md:w-[900px]" />
+          <img src={lap3} alt="laptop" className="w-60 md:w-[900px]" />
           </motion.div>
           </a>
-          <p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px]">
-            145Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
-          </p>
+          <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
+  <span className="block md:hidden">
+    Golden Water Cleaning utilizes React, Framer Motion, and Tailwind CSS for a smooth, responsive design and dynamic animations.
+  </span>
+  <span className="hidden md:block">
+    Golden Water Cleaning is a project that leverages React, Framer Motion, and Tailwind CSS to provide an intuitive, smooth user experience with dynamic animations and responsive design.
+  </span>
+</p>
+
+
           <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform translate-x-5" />
           <a href="https://www.goldenwater-emirates.com/" target="_blank" rel="noopener noreferrer">
           <div className="hidden md:block absolute  bg-gray-200 rounded-full w-3 h-3 right-0 transform -translate-x-[667px] -translate-y-1 hover:bg-gradient-to-r from-pink-500 to-blue-500">
@@ -93,16 +106,22 @@ const ServicesSection = () => {
 </div>
 
          
-          <p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, fugit obcaecati! Atque vitae consectetur est praesentium? Quis libero iusto soluta?
-          </p>
+<p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px] w-1/2">
+<span className="block md:hidden">
+    Clientsmaker streamlines client management with React, Framer Motion, and Tailwind CSS, offering smooth interactions.
+  </span>
+  <span className="hidden md:block">
+    Clientsmaker is a powerful tool designed to streamline client management and communication. Built with React, Framer Motion, and Tailwind CSS, it provides a sleek interface with smooth transitions. Easily get in touch with us via the integrated contact form or connect instantly on WhatsApp for any inquiries or support.
+  </span>
+</p>
+
           <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
           <motion.div
   className="relative"
   whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
   transition={{ duration: 0.5, ease: "easeInOut" }}
 >
-          <img src={lap2} alt="laptop" className="w-40 md:w-[900px]" />
+          <img src={lap2} alt="laptop" className="w-60 md:w-[900px]" />
           </motion.div>
           </a>
         </div>
