@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import HeroBackground from "../components/HeroBackground"
 import dp from '../assets/Images/ali1.png'
 import bg from '../assets/Images/bg.jpg'
+import bg2 from '../assets/Images/bg2.png'
 import ServicesSection from "../components/ServicesSection";
 import Modal from "../components/Modal";
 import react from '../assets/Images/React.png'
 import node from '../assets/Images/node.png'
 import mongo from '../assets/Images/mongo.png'
 import tailwind from '../assets/Images/tailwind.png'
+import TestimonialSlider from "../components/TestimonialSlider";
 
 
 
@@ -84,60 +86,18 @@ const Home = () => {
         </p>
       </Modal>
 
-      {/* Projects Section */}
-      {/* <section className="py-16 px-8 bg-gray-100">
-        <h2 className="text-3xl font-semibold text-center">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
-          <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-            <img
-              src={"https://via.placeholder.com/300x200"}
-              alt="Project 1"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">Project 1</h3>
-              <p className="text-gray-600 mt-2">
-                A brief description of this project and its features.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Project 2"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">Project 2</h3>
-              <p className="text-gray-600 mt-2">
-                A brief description of this project and its features.
-              </p>
-            </div>
-          </div>
-          <div className="bg-white shadow-lg rounded-xl overflow-hidden">
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Project 3"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">Project 3</h3>
-              <p className="text-gray-600 mt-2">
-                A brief description of this project and its features.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
 
       <ServicesSection />
 
       {/* Contact Section */}
-      <section className="py-16 px-8 bg-white">
-        <h2 className="text-3xl font-semibold text-center">Contact Me</h2>
+{/* <TestimonialSlider /> */}
+
+      <section className="py-16 px-8 bg-white  bg-cover"style={{ backgroundImage: `url(${bg2})` }}>
+        <h2 className="text-3xl font-semibold text-center text-white">Contact Me</h2>
         <form className="mt-8 max-w-lg mx-auto">
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium" htmlFor="name">
+            <label className="block text-gray-100 font-medium" htmlFor="name">
               Name
             </label>
             <input
@@ -148,18 +108,18 @@ const Home = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium" htmlFor="email">
+            <label className="block text-gray-100 font-medium" htmlFor="email">
               Email
             </label>
             <input
               type="email"
               id="email"
-              className="w-full mt-2 p-3 border border-gray-300 rounded-lg"
+              className="w-full mt-2 p-3 border border-gray-200 rounded-lg"
               placeholder="Your email"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 font-medium" htmlFor="message">
+            <label className="block text-gray-100 font-medium" htmlFor="message">
               Message
             </label>
             <textarea
@@ -171,14 +131,14 @@ const Home = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-600"
+            className="w-full bg-gray-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-600"
           >
             Send Message
           </button>
         </form>
       </section>
 
-      <footer className="bg-gray-800 text-white py-4 text-center">
+      <footer className="bg-gray-900 text-white py-4 text-center">
         <p>&copy; 2025 Ali Akram Khan. All rights reserved.</p>
       </footer>
       </>
