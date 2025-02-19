@@ -70,7 +70,7 @@ const ContactForm = () => {
 
   return (
     <section
-      className="py-16 px-8 bg-white bg-cover"
+      className=" py-16 px-8 bg-black bg-contain bg-no-repeat bg-center  md:bg-cover "
       style={{ backgroundImage: `url(${bg2})` }}
     >
       <h2 className="text-3xl font-semibold text-center text-white">Contact Me</h2>

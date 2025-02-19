@@ -40,7 +40,7 @@ const Home = () => {
 
   return (
     <>
-    <div className="relative text-white min-h-screen flex items-center bg-cover"style={{ backgroundImage: `url(${bg})` }}>
+    <div className="bg-black relative text-white min-h-screen flex items-center bg-contain bg-no-repeat bg-center  md:bg-cover "style={{ backgroundImage: `url(${bg})` }}>
     <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
