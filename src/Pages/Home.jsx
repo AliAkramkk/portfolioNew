@@ -11,7 +11,7 @@ import mongo from '../assets/Images/mongo.png'
 import tailwind from '../assets/Images/tailwind.png'
 import TestimonialSlider from "../components/TestimonialSlider";
 import ContactForm from "../components/ContactForm";
-
+import Particles from "../components/Particles";
 
 
 
@@ -40,7 +40,22 @@ const Home = () => {
 
   return (
     <>
-    <div className="bg-black relative text-white min-h-screen flex items-center bg-contain bg-no-repeat bg-center  md:bg-cover "style={{ backgroundImage: `url(${bg})` }}>
+    <div className=" relative  text-white min-h-screen flex items-center  ">
+      {/* Particles Background */}
+      <div className="bg-black    " style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
+        <Particles
+          particleColors={['#ffffff']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.2}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={true}
+          particleHoverFactor={1}
+          sizeRandomness={1}
+        />
+      </div>
     <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">

@@ -29,12 +29,31 @@ const ServicesSection = () => {
         <div className="md:absolute flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:w-1/2">
         <a href="https://www.skepinteriors.com/" target="_blank" rel="noopener noreferrer">
         <motion.div
-  className="relative"
-  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
-  transition={{ duration: 0.5, ease: "easeInOut" }}
->
-          <img src={lap} alt="laptop" className="w-60  md:w-[900px] hover:" />
-          </motion.div>
+      className="relative overflow-hidden w-full"
+      whileHover={{
+        rotate: [0, 2, -2, 2, 0],
+        scale: 1.1,
+      }}
+      transition={{ duration: 0.5, ease: 'easeInOut' }}
+    >
+      <img
+        src={lap}
+        alt="Laptop Image"
+        className="object-cover w-60 md:w-[900px]" // Ensure image resizes correctly
+      />
+
+      {/* Overlay content */}
+      <div
+        className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+      >
+        <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">Skep Interiors</p>
+      </div>
+
+      {/* Optional Mobile Warning */}
+      {/* <div className="absolute top-0 left-1/2 transform -translate-x-1/2 text-white p-4 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+        This feature is not available on mobile.
+      </div> */}
+    </motion.div>
           </a>
           <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
   <span className="block md:hidden">
@@ -63,11 +82,22 @@ const ServicesSection = () => {
         <div className=" flex flex-row md:flex-row items-center space-y-4 md:mt-96 ">
         <a href="https://www.goldenwater-emirates.com/" target="_blank" rel="noopener noreferrer">
         <motion.div
-  className="relative"
-  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
-  transition={{ duration: 0.5, ease: "easeInOut" }}
->
-          <img src={lap3} alt="laptop" className="w-60 md:w-[900px]" />
+      className="relative overflow-hidden w-full"
+      whileHover={{
+        rotate: [0, 2, -2, 2, 0],
+        scale: 1.1,
+      }}
+      transition={{ duration: 0.5, ease: 'easeInOut' }}
+    >
+
+          <img src={lap3} alt="laptop" className="w-60 md:w-[1100px]" />
+          <div
+        className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+      >
+        <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">Golden 
+          water Cleaning
+        </p>
+      </div>
           </motion.div>
           </a>
           <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
@@ -117,11 +147,19 @@ const ServicesSection = () => {
 
           <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
           <motion.div
-  className="relative"
-  whileHover={{ rotate: [0, 2, -2, 2, 0], scale: 1.1 }}
-  transition={{ duration: 0.5, ease: "easeInOut" }}
->
+      className="relative overflow-hidden w-full"
+      whileHover={{
+        rotate: [0, 2, -2, 2, 0],
+        scale: 1.1,
+      }}
+      transition={{ duration: 0.5, ease: 'easeInOut' }}
+    >
           <img src={lap2} alt="laptop" className="w-60 md:w-[900px]" />
+          <div
+        className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300"
+      >
+        <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">Clients Maker</p>
+      </div>
           </motion.div>
           </a>
         </div>
