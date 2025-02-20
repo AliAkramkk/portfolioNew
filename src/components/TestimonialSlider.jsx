@@ -8,7 +8,7 @@ import ali3 from "../assets/Images/test3.jpg";
 
 const TestimonialSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -43,8 +43,9 @@ const TestimonialSlider = () => {
   ];
 
   return (
-    <div className="text-black py-10 bg-cover bg-black">
-      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3 rounded-lg shadow-md bg-gradient-to-r from-gray-500 to-red-300">
+    <div className="text-white py-10 bg-cover bg-black border-3">
+      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-2   shadow-slate-50  bg-black  ">
+        
         <h2 className="text-2xl font-bold text-center mb-6">Testimonials</h2>
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
@@ -57,7 +58,7 @@ const TestimonialSlider = () => {
                 />
                 <div className="ml-4 text-left">
                   <h3 className="text-xl font-semibold">{testimonial.name}</h3>
-                  <p className="text-gray-900 text-sm">{testimonial.role}</p>
+                  <p className="text-gray-100 text-sm">{testimonial.role}</p>
                 </div>
               </div>
               <p className="text-lg italic">"{testimonial.text}"</p>

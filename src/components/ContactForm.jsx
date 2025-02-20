@@ -3,7 +3,7 @@ import bg2 from '../assets/Images/bg2.png'
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify'; // Import toast and ToastContainer
 import 'react-toastify/dist/ReactToastify.css';
-
+import Particles from './Particles';
 
 const ContactForm = () => {
 
@@ -69,10 +69,22 @@ const ContactForm = () => {
 
 
   return (
-    <section
-      className=" py-16 px-8 bg-black bg-contain bg-no-repeat bg-center  md:bg-cover "
-      style={{ backgroundImage: `url(${bg2})` }}
-    >
+    <div className=" relative  text-white min-h-screen   ">
+      {/* Particles Background */}
+      <div className="bg-black    " style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
+        <Particles
+          particleColors={['#ffffff']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.2}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+          particleHoverFactor={2}
+          sizeRandomness={2}
+        />
+      </div>
       <h2 className="text-3xl font-semibold text-center text-white">Contact Me</h2>
       <form className="mt-8 max-w-lg mx-auto" onSubmit={handleSubmit}>
         {/* Name Field */}
@@ -154,7 +166,7 @@ const ContactForm = () => {
         draggable
         pauseOnHover
       />
-    </section>
+    </div>
   );
 };
 

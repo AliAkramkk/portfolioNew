@@ -5,13 +5,29 @@ import lap3  from '../assets/Images/lap4.png';
 import bg from '../assets/Images/bg 1.jpg';
 import TestimonialSlider from './TestimonialSlider';
 import { motion } from "framer-motion";   
-
+import Particles from './Particles';
 
 
 const ServicesSection = () => {
   return (
     <>
-    <section className="bg-gray-900 text-white py-10 bg-cover"style={{ backgroundImage: `url(${bg})` }}>
+    {/* <section className="bg-gray-900 text-white py-10 bg-cover"style={{ backgroundImage: `url(${bg})` }}> */}
+    <div className=" relative  text-white min-h-screen   ">
+      {/* Particles Background */}
+      <div className="bg-black    " style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
+        <Particles
+          particleColors={['#ffffff']}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.2}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={true}
+          particleHoverFactor={1}
+          sizeRandomness={1}
+        />
+      </div>
       <div className="flex justify-start  items-end container mx-auto px-6 md:w:1/2 mb-4">
       <hr className="border-t-2 border-gray-500 w-1/12" />
         <h1 className="text-xl md:text-2xl md:text-center font-mono text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
@@ -172,7 +188,8 @@ const ServicesSection = () => {
           </p>
         </div> */}
       </div>
-    </section>
+      </div>
+    {/* </section> */}
       <TestimonialSlider />
       </>
   );
