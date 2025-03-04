@@ -4,6 +4,7 @@ import dp from '../assets/Images/ali1.png'
 import bg from '../assets/Images/bg.jpg'
 import bg2 from '../assets/Images/bg2.png'
 import ServicesSection from "../components/ServicesSection";
+import { motion } from "framer-motion";
 import Modal from "../components/Modal";
 import react from '../assets/Images/React.png'
 import node from '../assets/Images/node.png'
@@ -60,7 +61,7 @@ const Home = () => {
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <h1 className="text-4xl md:text-6xl font-mono leading-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
-          Frontend <br /> <span>Developer</span>
+          Full-Stack <br /> <span>Developer</span>
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-300">
           I am <span className="md:text-2xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">Ali Akram Khan </span>– a web developer with a passion for creating
@@ -78,10 +79,12 @@ const Home = () => {
       </div>
       {/* Image Section */}
       <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center">
-        <img
+      <motion.img
           src={dp}
           alt="Ali Akram Khan"
           className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-4 border-gray-800 bg-gray-800"
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
     </div>
