@@ -81,6 +81,9 @@ const Modal = ({ isOpen, onClose, title, techStack, links, children }) => {
             >
               <span>📞</span>
               <span>+91 9946 921 752</span>
+              <span> </span>
+              <span>📞</span>
+              <span>+971 562613106</span>
             </a>
 
             {/* Resume Download */}

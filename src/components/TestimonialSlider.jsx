@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
 
   return (
     <div className="text-white py-10 bg-cover bg-black border-3">
-      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-2   shadow-slate-50  bg-black  ">
+      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-2   shadow-slate-50  bg-black rounded-3xl ">
         
         <h2 className="text-2xl font-bold text-center mb-6">Testimonials</h2>
         <Slider {...settings}>

@@ -141,7 +141,7 @@ const ServicesSection = () => {
         <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform -translate-x-5 -translate-y-[1px]" />
        <div className="relative">
   {/* The clickable dot */}
-  <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://client-maker.vercel.app/" target="_blank" rel="noopener noreferrer">
     <div className="hidden md:block absolute -right-90 bg-gray-200 rounded-full w-3 h-3 transform -translate-x-[155px] -translate-y-4 hover:bg-gradient-to-r from-pink-500 to-blue-500">
       {/* Tooltip or label that appears on hover */}
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
@@ -161,7 +161,7 @@ const ServicesSection = () => {
   </span>
 </p>
 
-          <a href="https://theclientsmaker.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://client-maker.vercel.app/" target="_blank" rel="noopener noreferrer">
           <motion.div
       className="relative overflow-hidden w-full"
       whileHover={{
