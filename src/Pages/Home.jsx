@@ -13,6 +13,7 @@ import tailwind from '../assets/Images/tailwind.png'
 import TestimonialSlider from "../components/TestimonialSlider";
 import ContactForm from "../components/ContactForm";
 import Particles from "../components/Particles";
+import TechStack from "../components/TechStack";
 
 
 
@@ -105,7 +106,7 @@ const Home = () => {
         </p>
       </Modal>
 
-      
+      <TechStack />
 
       <ServicesSection />
 
