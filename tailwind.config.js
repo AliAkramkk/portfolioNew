@@ -13,7 +13,7 @@ export default {
       keyframes: {
         scroll: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-20%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },

@@ -8,6 +8,7 @@ import tailwindLogo from "../assets/Images/tailwind.png";
 import wasLogo from "../assets/Images/AWS.png";
 import nginex from "../assets/Images/nginex.png";
 import bootstrap from "../assets/Images/bootstrap.jpg";
+import service from "../assets/Images/service.jpg";
 
 const techStack = [
   { src: reactLogo, alt: "React" },
@@ -19,6 +20,7 @@ const techStack = [
   { src: wasLogo, alt: "WAS" },
   { src: bootstrap, alt: "bootstrap" },
   { src: nginex, alt: "nginex" },
+  { src: service, alt: "service" },
 ];
 
 const TechStack = () => {
@@ -30,7 +32,7 @@ const TechStack = () => {
             key={index}
             src={tech.src}
             alt={tech.alt}
-            className="h-16 w-auto inline-block grayscale hover:grayscale-0  transition duration-300 rounded-full animate-float"
+            className="h-16 w-auto inline-block grayscale hover:grayscale-0  transition duration-300 rounded-full "
           />
         ))}
       </div>
