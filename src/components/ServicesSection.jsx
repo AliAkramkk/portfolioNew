@@ -131,19 +131,19 @@ const ServicesSection = () => {
                 <img src={lap3} alt="laptop" className="w-60 md:w-[1100px]" />
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                    Golden water Cleaning
+                    Alsaif Interiors
                   </p>
                 </div>
               </motion.div>
             </a>
             <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
               <span className="block md:hidden">
-                Golden Water Cleaning utilizes React, Framer Motion, and
+                Al saif interior utilizes React, Framer Motion, and
                 Tailwind CSS for a smooth, responsive design and dynamic
                 animations.
               </span>
               <span className="hidden md:block">
-                Golden Water Cleaning is a project that leverages React, Framer
+                Al Saif interior is a project that leverages React, Framer
                 Motion, and Tailwind CSS to provide an intuitive, smooth user
                 experience with dynamic animations and responsive design.
               </span>
