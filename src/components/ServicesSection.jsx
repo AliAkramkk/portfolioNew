@@ -74,7 +74,7 @@ const ServicesSection = () => {
                 {/* Overlay content */}
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                    Skep Interiors
+                  View Live Site
                   </p>
                 </div>
 
@@ -87,8 +87,8 @@ const ServicesSection = () => {
             <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
               <span className="block md:hidden">
                 Skep is a single-page application built from a Figma design,
-                utilizing React, Framer Motion, and Tailwind CSS for smooth
-                animations.
+                using React, Framer Motion, and Tailwind CSS to create smooth
+                animations and an engaging user experience.
               </span>
               <span className="hidden md:block">
                 This project, Skep, was built using React, Framer Motion, and
@@ -106,7 +106,7 @@ const ServicesSection = () => {
             >
               <div className="hidden md:block absolute right-0 bg-gray-200 rounded-full w-3 h-3 transform translate-x-2 translate-y-10 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded">
-                  visit Skep Interiors
+                View Live Site
                 </div>
               </div>
               <div className="hidden md:block my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"></div>
@@ -131,16 +131,16 @@ const ServicesSection = () => {
                 <img src={lap3} alt="laptop" className="w-60 md:w-[1100px]" />
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                    Alsaif Interiors
+                  View Live Site
                   </p>
                 </div>
               </motion.div>
             </a>
             <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
               <span className="block md:hidden">
-                Al saif interior utilizes React, Framer Motion, and
-                Tailwind CSS for a smooth, responsive design and dynamic
-                animations.
+                Al Saif Interiors leverages React, Framer Motion, and Tailwind
+                CSS to deliver a smooth, responsive design with dynamic
+                animations
               </span>
               <span className="hidden md:block">
                 Al Saif interior is a project that leverages React, Framer
@@ -157,7 +157,7 @@ const ServicesSection = () => {
             >
               <div className="hidden md:block absolute  bg-gray-200 rounded-full w-3 h-3 right-0 transform -translate-x-[667px] -translate-y-1 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
-                  visit Alsaif Interiors
+                View Live Site
                 </div>
               </div>
             </a>
@@ -176,7 +176,7 @@ const ServicesSection = () => {
                 <div className="hidden md:block absolute -right-90 bg-gray-200 rounded-full w-3 h-3 transform -translate-x-[155px] -translate-y-4 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                   {/* Tooltip or label that appears on hover */}
                   <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
-                    visit ClientsMaker
+                  View Live Site
                   </div>
                 </div>
               </a>
@@ -184,8 +184,9 @@ const ServicesSection = () => {
 
             <p className="font-thin p-3 md:bg-black md:rounded-xl md:w-[400px] w-1/2">
               <span className="block md:hidden">
-                Clientsmaker streamlines client management with React, Framer
-                Motion, and Tailwind CSS, offering smooth interactions.
+                ClientsMaker simplifies client management with React, Framer
+                Motion, and Tailwind CSS, offering a seamless and interactive
+                user experience.
               </span>
               <span className="hidden md:block">
                 Clientsmaker is a powerful tool designed to streamline client
@@ -213,7 +214,7 @@ const ServicesSection = () => {
                 <img src={lap2} alt="laptop" className="w-60 md:w-[900px]" />
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                    Clients Maker
+                  View Live Site
                   </p>
                 </div>
               </motion.div>
