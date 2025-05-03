@@ -28,23 +28,23 @@ const TestimonialSlider = () => {
     },
     {
       id: 2,
-      name: "Jane Smith",
+      name: "Aslam Fahad",
       text: "I am extremely satisfied with the quality and support provided.",
-      role: "Product Manager",
+      role: "Al Saif Group",
       img: ali2,
     },
     {
       id: 3,
-      name: "Michael Brown",
+      name: "Navneet",
       text: "Professional and reliable, couldn’t ask for more!",
-      role: "Business Owner",
+      role: "Golden Water Tank cleaning",
       img: ali3,
     },
   ];
 
   return (
     <div className="text-white py-10 bg-cover bg-black border-3">
-      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-2   shadow-slate-50  bg-black rounded-3xl ">
+      <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-1   shadow-slate-50  bg-black rounded-sm ">
         
         <h2 className="text-2xl font-bold text-center mb-6">Testimonials</h2>
         <Slider {...settings}>

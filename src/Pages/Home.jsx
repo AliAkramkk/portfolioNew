@@ -14,6 +14,7 @@ import TestimonialSlider from "../components/TestimonialSlider";
 import ContactForm from "../components/ContactForm";
 import Particles from "../components/Particles";
 import TechStack from "../components/TechStack";
+import About from "./About";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -120,13 +121,16 @@ const Home = () => {
 
       <TechStack />
 
+      <About />
       <ServicesSection />
-
+      <TestimonialSlider />
       <ContactForm />
-
-      <footer className="bg-gray-900 text-white py-4 text-center">
-        <p>&copy; 2025 Ali Akram Khan. All rights reserved.</p>
-      </footer>
+      <hr className="border-t-2 border-gray-500 w-full" />
+      <footer className="bg-black text-white p-4 flex items-center justify-center space-x-4">
+  <span className="font-playwrite">ali akram</span>
+  <div className="w-px h-5 bg-gray-400"></div>
+  <p>&copy; 2023. All rights reserved.</p>
+</footer>
     </>
   );
 };

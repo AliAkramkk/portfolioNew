@@ -231,7 +231,7 @@ const ServicesSection = () => {
         </div>
       </div>
       {/* </section> */}
-      <TestimonialSlider />
+   
     </>
   );
 };
