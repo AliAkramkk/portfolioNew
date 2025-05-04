@@ -31,7 +31,7 @@ const cards = [
     logo: freelance,
     heading: 'Freelance Developer',
     description: 'Help buisness owners to full fill thier digital prescence.',
-    highlight: 'UI/UX | SEO | CUSTOM DESIGN | MOBILE RESPONSIVE.',
+    highlight: 'E-COMMERCE | UI/UX | SEO | CUSTOM DESIGN | MOBILE RESPONSIVE | FIGMA ',
   },
 ];
 
@@ -48,7 +48,7 @@ const About = () => {
           <img
             src={card.logo}
             alt="logo"
-            className="absolute inset-0 w-full h-full object-cover opacity-15 z-0"
+            className="absolute inset-0 w-full h-full object-cover opacity-35 z-0"
           />
 
           {/* Title (always visible) */}
@@ -60,7 +60,7 @@ const About = () => {
           <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col  text-start px-4 pt-10">
             <h2 className="text-base font-mono mt-3">{card.heading}</h2>
             <p className="text-sm font-mono">{card.description}</p>
-            <p className="text-sm mt-2  font-mono">{card.highlight}</p>
+            <p className="text-sm  mt-2 font-rubik uppercase">{card.highlight}</p>
           </div>
         </div>
       ))}

@@ -46,22 +46,22 @@ const TestimonialSlider = () => {
     <div className="text-white py-10 bg-cover bg-black border-3">
       <div className="max-w-lg m-6 md:max-w-2xl mx-2 md:mx-auto p-3  hover:shadow-slate-100 shadow-md border-1   shadow-slate-50  bg-black rounded-sm ">
         
-        <h2 className="text-2xl font-bold text-center mb-6">Testimonials</h2>
+        <h2 className="text-2xl font-thin text-center mb-6">Customers Feedback</h2>
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="text-center p-4">
-              <div className="flex justify-center items-center mb-4">
+              <div className="flex justify-center items-center mb-4 font-thin">
                 <img
                   src={testimonial.img}
                   alt="user"
                   className="w-24 h-24 rounded-full"
                 />
                 <div className="ml-4 text-left">
-                  <h3 className="text-xl font-semibold">{testimonial.name}</h3>
+                  <h3 className="text-xl font-thin">{testimonial.name}</h3>
                   <p className="text-gray-100 text-sm">{testimonial.role}</p>
                 </div>
               </div>
-              <p className="text-lg italic">"{testimonial.text}"</p>
+              <p className="text-lg font-thin">"{testimonial.text}"</p>
             </div>
           ))}
         </Slider>

@@ -82,11 +82,12 @@ const Home = () => {
             <div className="relative inline-block mt-6">
               {/* <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-pink-500 to-blue-500 -z-10"></div> */}
               <button
-                onClick={handleModalToggle}
-                className="px-6 py-3 text-white border-2  border-gradient border-[#f09cf0] bg-gradient rounded-2xl shadow-md hover:bg-transparent transition-all hover:border-[#581258]"
-              >
-                About Me
-              </button>
+  onClick={handleModalToggle}
+  className="relative px-6 py-3 text-white border-2 border-[#f09cf0] bg-gradient rounded-2xl shadow-md transition-all 
+             hover:bg-transparent hover:border-[#581258] hover:animate-border-spin"
+>
+  About Me
+</button>
             </div>
           </div>
           {/* Image Section */}
