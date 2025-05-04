@@ -6,32 +6,32 @@ import freelance from '../assets/Images/freelance.jpg';
 
 const cards = [
   {
-    title: 'Electronics Engineer',
+    title: 'MES College of Engineering',
     logo: mes,
-    heading: 'MES College of Engineering',
+    heading: '',
     description: 'Completed B.Tech in Electronics & Communication.',
-    highlight: 'Worked on IoT & robotics mini projects.',
+    highlight: 'Worked on IEEE | Robotics mini projects.',
   },
   {
     title: 'Service Engineer',
     logo: signet,
-    heading: 'Electronics Service Pvt Ltd',
-    description: 'Handled electronic device maintenance & field work.',
-    highlight: 'Troubleshooting and client-side installations.',
+    heading: 'SIGNET ID AUTOMATION',
+    description: 'Handled electronic device maintenance & Biometric software.',
+    highlight: 'Troubleshooting | Client Meetings | Automation.',
   },
   {
     title: 'Brototype Intern',
     logo: brototype,
     heading: 'Brototype India',
     description: 'Full-stack development internship.',
-    highlight: 'Built mini MERN projects & team collaboration.',
+    highlight: 'Built MERN projects | Team collaboration | Communication cordinator',
   },
   {
     title: 'Freelancer',
     logo: freelance,
     heading: 'Freelance Developer',
-    description: 'Websites for small businesses.',
-    highlight: 'UI/UX & mobile responsive design.',
+    description: 'Help buisness owners to full fill thier digital prescence.',
+    highlight: 'UI/UX | SEO | CUSTOM DESIGN | MOBILE RESPONSIVE.',
   },
 ];
 
@@ -52,15 +52,15 @@ const About = () => {
           />
 
           {/* Title (always visible) */}
-          <div className="absolute top-3 left-3 right-3 text-center text-sm font-semibold z-10">
+          <div className="absolute top-3 left-3 right-3 text-center text-sm font-mono z-10">
             {card.title}
           </div>
 
           {/* Hover content */}
-          <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center px-4 pt-10">
-            <h2 className="text-base font-bold mb-1">{card.heading}</h2>
-            <p className="text-sm">{card.description}</p>
-            <p className="text-sm mt-2 italic">{card.highlight}</p>
+          <div className="absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col  text-start px-4 pt-10">
+            <h2 className="text-base font-mono mt-3">{card.heading}</h2>
+            <p className="text-sm font-mono">{card.description}</p>
+            <p className="text-sm mt-2  font-mono">{card.highlight}</p>
           </div>
         </div>
       ))}
