@@ -74,7 +74,7 @@ const ServicesSection = () => {
                 {/* Overlay content */}
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                  View Live Site
+                    View Live Site
                   </p>
                 </div>
 
@@ -106,7 +106,7 @@ const ServicesSection = () => {
             >
               <div className="hidden md:block absolute right-0 bg-gray-200 rounded-full w-3 h-3 transform translate-x-2 translate-y-10 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded">
-                View Live Site
+                  View Live Site
                 </div>
               </div>
               <div className="hidden md:block my-12 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50"></div>
@@ -116,7 +116,7 @@ const ServicesSection = () => {
           {/* Project 2 */}
           <div className=" flex flex-row md:flex-row items-center space-y-4 md:mt-96 ">
             <a
-              href="https://al-saif-interiors.vercel.app/"
+              href="https://www.alsaifdecor.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -131,7 +131,7 @@ const ServicesSection = () => {
                 <img src={lap3} alt="laptop" className="w-60 md:w-[1100px]" />
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                  View Live Site
+                    View Live Site
                   </p>
                 </div>
               </motion.div>
@@ -143,21 +143,24 @@ const ServicesSection = () => {
                 animations
               </span>
               <span className="hidden md:block">
-                Al Saif interior is a project that leverages React, Framer
-                Motion, and Tailwind CSS to provide an intuitive, smooth user
-                experience with dynamic animations and responsive design.
+                Al Saif Interior is a project built with Next.js, Framer Motion,
+                and Tailwind CSS, delivering a fast, SEO-optimized, and
+                responsive web experience. The client required a distinctive and
+                custom design to reflect their brand identity, along with
+                dynamic animations and seamless user interactions to enhance
+                user engagement
               </span>
             </p>
 
             <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform translate-x-5" />
             <a
-              href="https://al-saif-interiors.vercel.app//"
+              href="https://www.alsaifdecor.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div className="hidden md:block absolute  bg-gray-200 rounded-full w-3 h-3 right-0 transform -translate-x-[667px] -translate-y-1 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                 <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
-                View Live Site
+                  View Live Site
                 </div>
               </div>
             </a>
@@ -176,7 +179,7 @@ const ServicesSection = () => {
                 <div className="hidden md:block absolute -right-90 bg-gray-200 rounded-full w-3 h-3 transform -translate-x-[155px] -translate-y-4 hover:bg-gradient-to-r from-pink-500 to-blue-500">
                   {/* Tooltip or label that appears on hover */}
                   <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 opacity-0 hover:opacity-100 transition-opacity duration-300 text-sm text-white bg-black p-4 w-32 rounded font-semibold">
-                  View Live Site
+                    View Live Site
                   </div>
                 </div>
               </a>
@@ -214,7 +217,7 @@ const ServicesSection = () => {
                 <img src={lap2} alt="laptop" className="w-60 md:w-[900px]" />
                 <div className="absolute inset-0 flex items-center justify-center  bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <p className="text-black text-sm font-thin bg-gray-100 p-2 rounded-lg ">
-                  View Live Site
+                    View Live Site
                   </p>
                 </div>
               </motion.div>
@@ -231,7 +234,6 @@ const ServicesSection = () => {
         </div>
       </div>
       {/* </section> */}
-   
     </>
   );
 };
