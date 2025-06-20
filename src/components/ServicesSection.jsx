@@ -84,14 +84,14 @@ const ServicesSection = () => {
       </div> */}
               </motion.div>
             </a>
-            <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
+            <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[500px] w-1/2">
               <span className="block md:hidden">
                 Skep is a single-page application built from a Figma design,
                 using React, Framer Motion, and Tailwind CSS to create smooth
                 animations and an engaging user experience.
               </span>
               <span className="hidden md:block">
-                This project, Skep, was built using React, Framer Motion, and
+                This project, Skep built using React, Framer Motion, and
                 Tailwind CSS, based on a Figma design. It is a single-page
                 application that demonstrates smooth animations, responsive
                 design, and an engaging user experience.
@@ -136,7 +136,7 @@ const ServicesSection = () => {
                 </div>
               </motion.div>
             </a>
-            <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[400px] w-1/2">
+            <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[500px] w-1/2">
               <span className="block md:hidden">
                 Al Saif Interiors leverages React, Framer Motion, and Tailwind
                 CSS to deliver a smooth, responsive design with dynamic
@@ -145,10 +145,7 @@ const ServicesSection = () => {
               <span className="hidden md:block">
                 Al Saif Interior is a project built with Next.js, Framer Motion,
                 and Tailwind CSS, delivering a fast, SEO-optimized, and
-                responsive web experience. The client required a distinctive and
-                custom design to reflect their brand identity, along with
-                dynamic animations and seamless user interactions to enhance
-                user engagement
+                responsive web experience. 
               </span>
             </p>
 
@@ -195,9 +192,7 @@ const ServicesSection = () => {
                 Clientsmaker is a powerful tool designed to streamline client
                 management and communication. Built with React, Framer Motion,
                 and Tailwind CSS, it provides a sleek interface with smooth
-                transitions. Easily get in touch with us via the integrated
-                contact form or connect instantly on WhatsApp for any inquiries
-                or support.
+                transitions.
               </span>
             </p>
 

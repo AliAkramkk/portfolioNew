@@ -15,6 +15,7 @@ import ContactForm from "../components/ContactForm";
 import Particles from "../components/Particles";
 import TechStack from "../components/TechStack";
 import About from "./About";
+import MyOtherWork from "../components/MyOtherWork";
 
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -124,7 +125,8 @@ const Home = () => {
 
       <About />
       <ServicesSection />
-      <TestimonialSlider />
+      <MyOtherWork />
+      {/* <TestimonialSlider /> */}
       <ContactForm />
       <hr className="border-t-2 border-gray-500 w-full" />
       <footer className="bg-black text-white p-4 flex items-center justify-center space-x-4">
