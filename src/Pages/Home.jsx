@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeroBackground from "../components/HeroBackground";
-import dp from "../assets/Images/ali1.png";
+import dp from "../assets/Images/aligpt.png";
 import bg from "../assets/Images/bg.jpg";
 import bg2 from "../assets/Images/bg2.png";
 import ServicesSection from "../components/ServicesSection";
@@ -96,7 +96,7 @@ const Home = () => {
             <motion.img
               src={dp}
               alt="Ali Akram Khan"
-              className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-4 border-gray-800 bg-gray-800"
+              className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-4 border-gray-950 bg-black"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -131,8 +131,8 @@ const Home = () => {
       <hr className="border-t-2 border-gray-500 w-full" />
       <footer className="bg-black text-white p-4 flex items-center justify-center space-x-4">
   <span className="font-playwrite">ali akram</span>
-  <div className="w-px h-5 bg-gray-400"></div>
-  <p>&copy; 2023. All rights reserved.</p>
+  <div className="w-px h-5 bg-gray-400 "></div>
+  <p className="font-thin">&copy; 2023. All rights reserved.</p>
 </footer>
     </>
   );

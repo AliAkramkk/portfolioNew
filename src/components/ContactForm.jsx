@@ -8,6 +8,12 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
 
+   const handleClick = () => {
+        const phoneNumber = '971562613106'; 
+        const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+        window.open(url, "_blank");
+      };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -63,13 +69,20 @@ const ContactForm = () => {
       <div className="relative z-10 grid md:grid-cols-2 gap-8 w-full max-w-6xl">
         {/* Left Section: Info */}
         <div className="flex flex-col justify-center p-6">
-          <h1 className="text-4xl font-bold leading-tight mb-4">
+          <h1 className="text-4xl font-bold leading-tight mb-2">
             Let’s make something <br />
-            amazing <span className="text-orange-400">together</span>.
+            amazing <span className="text-amber-400">together</span>.
           </h1>
-          <p className="text-lg mb-6">Start by <span className="text-orange-500 font-semibold px-2">saying hi</span></p>
-          <div className="space-y-2 text-sm text-gray-400">
-            <p><strong>Information</strong></p>
+          <p className="text-lg mb-2">Start by <span className="text-amber-500 font-semibold px-2">saying hi</span></p>
+           <button onClick={handleClick} className="relative overflow-hidden px-6 py-1 rounded-md text-xs md:text-sm tracking-widest flex items-center gap-2 group border hover:border-amber-400 hover:bg-white w-1/2 ">
+    <span className="relative z-10 text-white hover:text-amber-400  transition-colors duration-300 hover:scale-105">Chat on Whats App</span>
+    <span className="text:lg md:text-2xl relative z-10 text-white group-hover:text-white transition-colors duration-300 ">↗</span>
+
+    {/* Animated background */}
+    <span className="absolute inset-0 bg-black scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-700 ease-out z-0"></span>
+  </button>
+          <div className="space-y-2 text-sm text-gray-400 p-2 font-thin">
+            {/* <p><strong>Information</strong></p> */}
             <p>📍 Dubai, UAE</p>
             <p>📧 akramkorakkottil@gmail.com</p>
             <p>📞 +971 562 613 106</p>
