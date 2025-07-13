@@ -31,6 +31,18 @@ export default {
           '0%': { backgroundPosition: '0% 50%' },
           '100%': { backgroundPosition: '400% 50%' },
         },
+         spinGradient: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        borderSweep: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
+      },
+       animation: {
+        borderSweep: 'borderSweep 2s linear infinite',
       },
       fontFamily: {
         cinzel: ['Cinzel', 'serif'],

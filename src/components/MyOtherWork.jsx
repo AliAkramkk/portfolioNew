@@ -11,10 +11,11 @@ const MyOtherWork = () => {
       <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-12 mt-6'>
         {myOtherWorkData.map((work, index) => (
           <div key={index} className='text-center'>
-            <div className='rounded-tr-3xl rounded-bl-3xl border  overflow-hidden w-20 h-20 md:w-56 md:h-48 mx-auto mb-2'>
+            <div className='rounded-tr-3xl rounded-bl-3xl border  overflow-hidden w-20 h-20 md:w-56 md:h-48 mx-auto mb-2 hover:border-b-4 hover:border-amber-300'>
               <img src={work.image} alt={work.title} className='w-full h-full object-cover hover:scale-150' />
             </div>
             <h3 className='text-sm font-medium'>{work.title}</h3>
+            
             <p className='text-xs mt-1'>{work.description}</p>
           </div>
         ))}

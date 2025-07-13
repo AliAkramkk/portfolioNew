@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.button-border-wrapper {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem; /* match button's radius */
+  padding: 2px; /* creates border space */
+  background: linear-gradient(90deg, #f09cf0, #581258, #f09cf0);
+  background-size: 300% 300%;
+}
+
+.button-border-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: linear-gradient(90deg, #f09cf0, #581258, #f09cf0);
+  border-radius: inherit;
+  animation: spinGradient 2s linear infinite;
+}
