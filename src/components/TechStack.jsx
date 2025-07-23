@@ -25,8 +25,8 @@ const techStack = [
 
 const TechStack = () => {
   return (
-    <div className="overflow-hidden py-6 bg-black">
-      <div className="whitespace-nowrap animate-scroll flex items-start  gap-20 ">
+    <div className="overflow-hidden py-6 bg-black w-full">
+      <div className=" flex animate-scroll gap-16 w-[200%] ">
         {techStack.concat(techStack).map((tech, index) => (
           <img
             key={index}
