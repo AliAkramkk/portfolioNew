@@ -39,16 +39,17 @@ const About = () => {
   return (
     <div className="grid md:grid-cols-4 gap-6 bg-black text-white p-10">
       {cards.map((card, index) => (
+        <div className='hover:bg-white rounded-lg'>
         <div
           key={index}
           className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm hover:shadow-blue-200 
-                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer "
+                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer hover:odd:skew-x-6    "
         >
           {/* Background image */}
           <img
             src={card.logo}
             alt="logo"
-            className="absolute inset-0 w-full h-full object-cover opacity-35 z-0"
+            className="absolute inset-0 w-full h-full object-cover opacity-35 z-0 "
           />
 
           {/* Title (always visible) */}
@@ -63,6 +64,7 @@ const About = () => {
             <p className="text-sm  mt-2 font-rubik uppercase">{card.highlight}</p>
           </div>
         </div>
+    </div>
       ))}
     </div>
   );

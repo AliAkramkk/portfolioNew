@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, title, techStack, links, children }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-gray-900 text-white rounded-lg shadow-lg p-8 w-11/12 md:w-1/2">
+      <div className="bg-gray-900 text-white rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 border-2 border-gray-800 skew-x-1">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
         <div>{children}</div>
 
