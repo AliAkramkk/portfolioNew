@@ -52,7 +52,7 @@ const MyOtherWork = () => {
       </div>
 
       {/* Animated Project Grid */}
-      <div ref={containerRef} className='flex justify-center items-center space-x-32 mt-6'>
+      <div ref={containerRef} className='flex justify-center items-center space-x-3 md:space-x-32 mt-6'>
         {visibleWorks.map((work, index) => (
           <div   key={index}
   className={` 
