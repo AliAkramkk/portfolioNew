@@ -21,6 +21,7 @@ const myOtherWorkData = [
     title: 'Shape interior design',
     description: 'Interior design project showcasing modern aesthetics.',
     github: 'https://github.com/AliAkramkk/Kitchen_Equipment_app',
+    live: 'https://skep-interior.vercel.app/'
    
   },
   {

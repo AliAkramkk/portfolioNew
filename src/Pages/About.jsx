@@ -39,7 +39,7 @@ const About = () => {
   return (
     <div className="grid md:grid-cols-4 gap-6 bg-black text-white p-10">
       {cards.map((card, index) => (
-        <div className='hover:bg-amber-300 rounded-lg'>
+        <div className='hover:border border-amber-300 rounded-lg'>
         <div
           key={index}
           className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm  

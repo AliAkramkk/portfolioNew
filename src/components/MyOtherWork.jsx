@@ -54,8 +54,12 @@ const MyOtherWork = () => {
       {/* Animated Project Grid */}
       <div ref={containerRef} className='flex justify-center items-center space-x-32 mt-6'>
         {visibleWorks.map((work, index) => (
-          <div key={index} className='text-center'>
-            <div className='rounded-3xl overflow-hidden w-24 h-24 md:w-64 md:h-56 mx-auto mb-2 hover:scale-105 transition-transform border hover:border-amber-300'>
+          <div   key={index}
+  className={` 
+    ${index % 2 === 0 ? 'rounded-t-full' : 'rounded-b-full'}`}>
+            <div className=
+            {` overflow-hidden w-24 md:h-[250px] md:w-64  mx-auto mb-2 hover:scale-105 transition-transform border hover:border-amber-300
+    ${index % 2 === 0 ? 'rounded-t-full' : 'rounded-t-full'}`}>
               <img
                 src={work.image}
                 alt={work.title}
@@ -66,11 +70,11 @@ const MyOtherWork = () => {
             <p className='text-xs mt-1 px-2'>{work.description}</p>
 
              <div className="flex justify-center space-x-4 mt-2 text-blue-400 text-xs">
-    <a href={work.github} target="_blank" rel="noopener noreferrer" className="hover:underline">
+    <a href={work.github} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin text-xl">
       GitHub
     </a>
     {work.live && (
-      <a href={work.live} target="_blank" rel="noopener noreferrer" className="hover:underline">
+      <a href={work.live} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin text-xl">
         Live
       </a>
     )}
