@@ -58,7 +58,7 @@ const MyOtherWork = () => {
   className={` 
     ${index % 2 === 0 ? 'rounded-t-full' : 'rounded-b-full'}`}>
             <div className=
-            {` overflow-hidden w-24 md:h-[250px] md:w-64  mx-auto mb-2 hover:scale-105 transition-transform border hover:border-amber-300
+            {` overflow-hidden w-24 h-36 md:h-[250px] md:w-64  mx-auto mb-2 hover:scale-105 transition-transform border hover:border-amber-300
     ${index % 2 === 0 ? 'rounded-t-full' : 'rounded-t-full'}`}>
               <img
                 src={work.image}
@@ -66,15 +66,15 @@ const MyOtherWork = () => {
                 className='w-full h-full  object-scale-down hover:object-cover transition-all duration-300'
               />
             </div>
-            <h3 className='text-sm font-medium'>{work.title}</h3>
-            <p className='text-xs mt-1 px-2'>{work.description}</p>
+            <h3 className='text-xs md:text-sm md:font-medium text-center'>{work.title}</h3>
+            <p className='hidden md:block text-xs mt-1 px-2'>{work.description}</p>
 
              <div className="flex justify-center space-x-4 mt-2 text-blue-400 text-xs">
-    <a href={work.github} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin text-xl">
+    <a href={work.github} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin md:text-xl">
       GitHub
     </a>
     {work.live && (
-      <a href={work.live} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin text-xl">
+      <a href={work.live} target="_blank" rel="noopener noreferrer" className="hover:underline font-thin md:text-xl">
         Live
       </a>
     )}

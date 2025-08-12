@@ -43,7 +43,7 @@ const About = () => {
         <div
           key={index}
           className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm  
-                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer hover:odd:skew-x-6    "
+                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer     "
         >
           {/* Background image */}
           <img

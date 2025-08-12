@@ -26,7 +26,7 @@ const techStack = [
 const TechStack = () => {
   return (
     <div className="relative overflow-hidden bg-black w-full h-64">
-      <div className="absolute top-9 left- w-[100%] h-[00%]  animate-scroll backface-visible flex gap-16 items-center">
+      <div className="absolute top-0 left- w-[100%] h-[100%]  animate-scroll backface-visible flex gap-16 items-center">
         {techStack.concat(techStack).map((tech, index) => (
           <img
             key={index}
