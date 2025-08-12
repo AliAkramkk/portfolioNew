@@ -11,14 +11,14 @@ const MyOtherWork = () => {
   const handlePrev = () => {
     if (startIndex === 0) return;
     animateSlide('right', () => {
-      setStartIndex((prev) => Math.max(prev - itemsToShow, 0));
+      setStartIndex((prev) => Math.max(prev - 1, 0));
     });
   };
 
   const handleNext = () => {
     if (startIndex + itemsToShow >= myOtherWorkData.length) return;
     animateSlide('left', () => {
-      setStartIndex((prev) => Math.min(prev + itemsToShow, myOtherWorkData.length - itemsToShow));
+      setStartIndex((prev) => Math.min(prev + 1, myOtherWorkData.length - itemsToShow));
     });
   };
 
@@ -59,12 +59,24 @@ const MyOtherWork = () => {
               <img
                 src={work.image}
                 alt={work.title}
-                className='w-full h-full object-cover'
+                className='w-full h-full  object-scale-down hover:object-cover transition-all duration-300'
               />
             </div>
             <h3 className='text-sm font-medium'>{work.title}</h3>
             <p className='text-xs mt-1 px-2'>{work.description}</p>
+
+             <div className="flex justify-center space-x-4 mt-2 text-blue-400 text-xs">
+    <a href={work.github} target="_blank" rel="noopener noreferrer" className="hover:underline">
+      GitHub
+    </a>
+    {work.live && (
+      <a href={work.live} target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Live
+      </a>
+    )}
+  </div>
           </div>
+          
         ))}
       </div>
 

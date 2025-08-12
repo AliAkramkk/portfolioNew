@@ -86,7 +86,7 @@ const Home = () => {
        <div className="group relative inline-block p-[2px] rounded-2xl bg-gradient-to-r from-[#f09cf0] via-[#581258] to-[#f09cf0] bg-[length:400%_400%] animate-none group-hover:animate-borderSweep">
   <button
     onClick={handleModalToggle}
-    className="relative z-10 px-6 py-3 bg-black text-white rounded-2xl w-full h-full hover:scale-105 hover:bg-white hover:text-black hover:border-2 hover:border-pink-500 transition-all duration-300 ease-in-out"
+    className="relative z-10 px-6 py-3 bg-black text-white rounded-2xl w-full h-full hover:scale-105  hover:border-2 hover:border-pink-500 transition-all duration-300 ease-in-out hover:skew-x-3"
   >
     About Me
   </button>

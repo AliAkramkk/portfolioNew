@@ -11,51 +11,62 @@ const myOtherWorkData = [
   {
     image: digitalAds, 
     title: 'MERN project for Digital Ads',
-    description: 'A web application built for managing digital advertisements.'
+    description: 'A web application built for managing digital advertisements.',
+     github: 'https://github.com/AliAkramkk/DigitalAds',
+  live: 'https://shimmering-capybara-84a6ef.netlify.app/'
    
   },
   {
     image: shape,
     title: 'Shape interior design',
-    description: 'Interior design project showcasing modern aesthetics.'
+    description: 'Interior design project showcasing modern aesthetics.',
+    github: 'https://github.com/AliAkramkk/Kitchen_Equipment_app',
    
   },
   {
     image: golden,
 
     title: 'cleaning company',
-    description: 'project for pest control and cleaning company.'
+    description: 'project for pest control and cleaning company.',
+    github: 'https://github.com/clientsmaker/cleaningCompany',
+    live: 'https://cleaning-company-self.vercel.app/'
+
   },
   {
     image: letscook,
     title: 'e-learning platform',
-    description: 'A platform for online cooking classes and recipes.'
+    description: 'A platform for online cooking classes and recipes.',
+    github: 'https://github.com/username/project1',
+    live: 'https://lets-cook-client.vercel.app/',
    
   },
   {
     image: techmate,
     title: 'TechMate it support',
-    description: 'A tech support platform connecting users with experts.'
-    
+    description: 'A tech support platform connecting users with experts.',
+    github: 'https://github.com/clientsmaker/Techmateitsolution',
   },
   {
     image: orhan,
     title: 'IT solutions',
-    description: 'A comprehensive IT solutions provider for businesses.'
-    
+    description: 'A comprehensive IT solutions provider for businesses.',
+    github: 'https://github.com/username/project1',
+   live: 'https://orhaan-information.vercel.app/'
     
   },
   {
     image: londeonbites,
     title: 'cafteria ordering system',
-    description: 'A cafeteria ordering system for efficient food service.'
+    description: 'A cafeteria ordering system for efficient food service.',
+    github: 'https://github.com/username/project1',
      
     
   },
   {
     image: kitchenqs,
     title: 'kitchen equipment store',
-    description: 'A store for kitchen equipment and supplies.'   
+    description: 'A store for kitchen equipment and supplies.' ,
+    github: 'https://github.com/AliAkramkk/Kitchen_Equipment_app',  
     
   }
 ];

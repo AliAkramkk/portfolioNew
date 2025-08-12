@@ -27,9 +27,9 @@ const cards = [
     highlight: 'Built MERN projects | Team collaboration | Communication cordinator',
   },
   {
-    title: 'Freelancer',
+    title: 'Software Developer',
     logo: freelance,
-    heading: 'Freelance Developer',
+    heading: 'Remote at Glinks Media',
     description: 'Help buisness owners to full fill thier digital prescence.',
     highlight: 'E-COMMERCE | UI/UX | SEO | CUSTOM DESIGN | MOBILE RESPONSIVE | FIGMA ',
   },
@@ -39,17 +39,17 @@ const About = () => {
   return (
     <div className="grid md:grid-cols-4 gap-6 bg-black text-white p-10">
       {cards.map((card, index) => (
-        <div className='hover:bg-white rounded-lg'>
+        <div className='hover:bg-amber-300 rounded-lg'>
         <div
           key={index}
-          className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm hover:shadow-blue-200 
+          className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm  
                      h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer hover:odd:skew-x-6    "
         >
           {/* Background image */}
           <img
             src={card.logo}
             alt="logo"
-            className="absolute inset-0 w-full h-full object-cover opacity-35 z-0 "
+            className="absolute inset-0 w-full h-full object-cover opacity-20 z-0 "
           />
 
           {/* Title (always visible) */}
