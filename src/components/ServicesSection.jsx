@@ -1,5 +1,5 @@
 import React from "react";
-import lap from "../assets/Images/lap1.png";
+import lap from "../assets/Images/landing.png";
 import lap2 from "../assets/Images/lap2.png";
 import lap3 from "../assets/Images/alsaif (2).png";
 import bg from "../assets/Images/bg 1.jpg";
@@ -53,7 +53,7 @@ const ServicesSection = () => {
           {/* Project 1 */}
           <div className="md:absolute flex flex-row md:flex-row items-center space-y-4 md:space-y-0 md:w-1/2">
             <a
-              href="https://www.skepinteriors.com/"
+              href="https://landing-page-omega-nine-80.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -86,12 +86,12 @@ const ServicesSection = () => {
             </a>
             <p className="font-thin p-3 md:bg-black md:space-x-1 md:w-[500px] w-1/2">
               <span className="block md:hidden">
-                Skep is a single-page application built from a Figma design,
+                This is a landing-page  built from a Figma design,
                 using React, Framer Motion, and Tailwind CSS to create smooth
                 animations and an engaging user experience.
               </span>
               <span className="hidden md:block">
-                This project, Skep built using React, Framer Motion, and
+                This is a Landing page built using React, Framer Motion, and
                 Tailwind CSS, based on a Figma design. It is a single-page
                 application that demonstrates smooth animations, responsive
                 design, and an engaging user experience.
@@ -100,7 +100,7 @@ const ServicesSection = () => {
 
             <hr className="hidden md:block space-x-0 border-t-2 border-gray-500 w-1/2 transform -translate-y-1" />
             <a
-              href="https://www.skepinteriors.com/"
+              href="https://landing-page-omega-nine-80.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
