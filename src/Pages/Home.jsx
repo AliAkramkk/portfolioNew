@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import HeroBackground from "../components/HeroBackground";
-import dp from "../assets/Images/aligpt.png";
+import dp from "../assets/Images/ali1.png";
 import bg from "../assets/Images/bg.jpg";
 import bg2 from "../assets/Images/bg2.png";
 import ServicesSection from "../components/ServicesSection";
@@ -70,7 +70,7 @@ const Home = () => {
         <div className="container mx-auto px-8 lg:flex lg:items-center lg:justify-between">
           {/* Text Section */}
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl font-mono leading-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
+            <h1 className="text-4xl md:text-8xl font- leading-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600">
               Full-Stack <br /> <span>Developer</span>
             </h1>
             <p className="mt-4 text-lg md:text-xl text-gray-300">
@@ -98,7 +98,7 @@ const Home = () => {
             <motion.img
               src={dp}
               alt="Ali Akram Khan"
-              className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-4 border-gray-950 bg-black"
+              className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-2 border-gray-950 bg-black"
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />

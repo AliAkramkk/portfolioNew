@@ -8,7 +8,7 @@ const Modal = ({ isOpen, onClose, title, techStack, links, children }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
-      <div className="bg-gray-900 text-white rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 border-2 border-gray-800 skew-x-1">
+      <div className="bg-gray-900 text-white rounded-lg shadow-lg p-8 w-11/12 md:w-1/2 border-2 border-gray-800 ">
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
         <div>{children}</div>
 
@@ -68,7 +68,7 @@ const Modal = ({ isOpen, onClose, title, techStack, links, children }) => {
             {/* Email */}
             <a
               href="mailto:akramkorakkottil@gmail.com"
-              className="flex items-center space-x-2 hover:opacity-80 hover:transition-transform duration-500 ease-in-out transform hover:scale-110"
+              className="flex items-center  hover:opacity-80 hover:transition-transform duration-500 ease-in-out transform hover:scale-110"
             >
               <span>📧</span>
               <span>akramkorakkottil@gmail.com</span>
@@ -79,9 +79,9 @@ const Modal = ({ isOpen, onClose, title, techStack, links, children }) => {
               href="tel:9946921752"
               className="flex items-center space-x-2 hover:opacity-80 hover:transition-transform duration-500 ease-in-out transform hover:scale-110 mt-2"
             >
-              <span>📞</span>
-              <span>+91 9946 921 752</span>
-              <span> </span>
+              {/* <span>📞</span> */}
+              {/* <span>+91 9946 921 752</span> */}
+              {/* <span> </span> */}
               <span>📞</span>
               <span>+971 562613106</span>
             </a>

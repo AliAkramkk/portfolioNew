@@ -75,18 +75,18 @@ const ContactForm = () => {
           </h1>
           <p className="text-lg mb-2">Start by <span className="text-amber-500 font-semibold px-2">saying hi</span></p>
            <button onClick={handleClick} className="relative overflow-hidden px-6 py-1 rounded-md text-xs md:text-sm tracking-widest flex items-center gap-2 group border hover:border-amber-400 hover:bg-white w-1/2 ">
-    <span className="relative z-10 text-white hover:text-amber-400  transition-colors duration-300 hover:scale-105">Chat on Whats App</span>
+    <span className="relative z-10 text-white hover:text-amber-400  transition-colors duration-300 ">Chat on Whats App</span>
     <span className="text:lg md:text-2xl relative z-10 text-white group-hover:text-white transition-colors duration-300 ">↗</span>
 
     {/* Animated background */}
-    <span className="absolute inset-0 bg-black scale-y-0 group-hover:scale-y-100 origin-bottom transition-transform duration-700 ease-out z-0"></span>
+    <span className="absolute inset-0 bg-black scale-y-0 group-hover:scale-y-95 origin-bottom transition-transform duration-1000 ease-out z-1"></span>
   </button>
           <div className="space-y-2 text-sm text-gray-400 p-2 font-thin">
             {/* <p><strong>Information</strong></p> */}
             <p>📍 Dubai, UAE</p>
             <p>📧 akramkorakkottil@gmail.com</p>
             <p>📞 +971 562 613 106</p>
-            <p>📞 +91 9946 921 752</p>
+            {/* <p>📞 +91 9946 921 752</p> */}
           </div>
         </div>
 

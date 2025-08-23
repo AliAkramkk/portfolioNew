@@ -38,8 +38,8 @@ const ServicesSection = () => {
           />
         </div>
         <div className="flex justify-start  items-end container mx-auto px-6 md:w:1/2 mb-4">
-          <hr className="border-t-2 border-gray-500 w-1/12" />
-          <h1 className="text-xl md:text-2xl md:text-center font-mono text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500">
+          <hr className="border-t-2 border-gray-500 w-1/12 mt-48" />
+          <h1 className="text-xl md:text-2xl md:text-center font-mono text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 ">
             Some of my latest work
           </h1>
           {/* <hr className="border-t-2 border-gray-500 w-1/3" /> */}
