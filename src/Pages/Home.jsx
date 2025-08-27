@@ -94,11 +94,11 @@ const Home = () => {
             </div>
           </div>
           {/* Image Section */}
-          <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center">
+          <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center mb-32 rotate-2 ">
             <motion.img
               src={dp}
               alt="Ali Akram Khan"
-              className="w-52 h-52 md:w-72 md:h-72 object-contain rounded-full shadow-lg border-2 border-gray-950 bg-black"
+              className="w-52 h-52 md:w-80 md:h-80 object-contain mt-36 rotate-3 border  rounded-full  shadow-lg "
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             />

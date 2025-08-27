@@ -38,7 +38,7 @@ const TechStack = () => {
           />
         ))}
       </div> */}
-      <div className="flex justify-center gap-6 m-10">
+      <div className="flex justify-center gap-6 m-10 ">
         <div className="w-26 h-16 bg-[#fae4ca] rounded-2xl p-2 text-center shadow-md -rotate-2 mt-10 ">
           <h2 className="md:font-stretch-50% md:text-4xl">React</h2>
           {/* <p className="text-xs md:text-sm mt-2">Discover your brand voice</p> */}
