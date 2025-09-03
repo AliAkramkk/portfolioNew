@@ -45,13 +45,13 @@ const About = () => {
         <div
           key={index}
           className="relative group bg-gray-950 rounded-md overflow-hidden shadow-sm  
-                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer     "
+                     h-20 hover:h-44 transition-all duration-500 ease-in-out cursor-pointer      "
         >
           {/* Background image */}
           <img
             src={card.logo}
             alt="logo"
-            className="absolute inset-0 w-full h-full object-cover opacity-20 z-0 "
+            className="absolute inset-0 w-full h-full object-cover opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 z-0  "
           />
 
           {/* Title (always visible) */}

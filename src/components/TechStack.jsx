@@ -5,77 +5,68 @@ import expressLogo from "../assets/Images/express js.png";
 import mongoLogo from "../assets/Images/mongo1.png";
 import githubLogo from "../assets/Images/git.png";
 import tailwindLogo from "../assets/Images/tailwind.png";
-import wasLogo from "../assets/Images/AWS.png";
-import figma from "../assets/Images/figma.png";
-import nginex from "../assets/Images/nginex.png";
-import bootstrap from "../assets/Images/bootstrap.jpg";
-import service from "../assets/Images/service.jpg";
+import awsLogo from "../assets/Images/AWS.png";
+import figmaLogo from "../assets/Images/figma.png";
+import nginxLogo from "../assets/Images/nginex.png";
+import bootstrapLogo from "../assets/Images/bootstrap.jpg";
+import vercelLogo from "../assets/Images/vercel.png"; // replace with actual Vercel logo if available
+import nextLogo from "../assets/Images/next.png"; // replace with actual Vercel logo if available
 
-const techStack = [
-  { src: reactLogo, alt: "React" },
-  { src: nodeLogo, alt: "Node.js" },
-  { src: expressLogo, alt: "Express" },
-  { src: mongoLogo, alt: "MongoDB" },
-  { src: githubLogo, alt: "GitHub" },
-  { src: tailwindLogo, alt: "Tailwind CSS" },
-  { src: wasLogo, alt: "WAS" },
-  { src: bootstrap, alt: "Bootstrap" },
-  { src: nginex, alt: "Nginx" },
-  { src: service, alt: "Service" },
-  { src: figma, alt: "figma" },
-];
+const categories = {
+  Frontend: [
+    { src: reactLogo, alt: "React" },
+    { src: tailwindLogo, alt: "Tailwind CSS" },
+    { src: bootstrapLogo, alt: "Bootstrap" },
+    { src: nextLogo, alt: "Next.js" },
+  ],
+  Backend: [
+    { src: nodeLogo, alt: "Node.js" },
+    { src: expressLogo, alt: "Express.js" },
+    { src: mongoLogo, alt: "MongoDB" },
+  ],
+  "DevOps & Tools": [
+    { src: githubLogo, alt: "GitHub" },
+    { src: awsLogo, alt: "AWS" },
+    { src: nginxLogo, alt: "Nginx" },
+    { src: vercelLogo, alt: "Vercel" },
+  ],
+  Design: [{ src: figmaLogo, alt: "Figma" }],
+};
 
 const TechStack = () => {
   return (
-    <div className="relative overflow-hidden bg-black w-full h-64 m-">
-      {/* <div className="absolute top-0 left- w-[100%] h-[100%]  animate-scroll backface-visible flex gap-16 items-center">
-        {techStack.concat(techStack).map((tech, index) => (
-          <img
-            key={index}
-            src={tech.src}
-            alt={tech.alt}
-            className="h-16 w-auto grayscale hover:grayscale-0    transition duration-300 rounded-full"
-          />
-        ))}
-      </div> */}
-      <div className="flex justify-center gap-6 m-10 ">
-        <div className="w-26 h-16 bg-[#fae4ca] rounded-2xl p-2 text-center shadow-md -rotate-2 mt-10 ">
-          <h2 className="md:font-stretch-50% md:text-4xl">React</h2>
-          {/* <p className="text-xs md:text-sm mt-2">Discover your brand voice</p> */}
-        </div>
-        <div className="w-26 h-16 bg-[#fde68a] rounded-2xl p-4 text-center shadow-md z-10">
-          <h2 className="md:font-stretch-50% md:text-4xl">Node js</h2>
-        </div>
-        <div className="w-26 h-16 bg-[#fca5a5] rounded-2xl p-4 text-center shadow-md transform rotate-3 mt-5">
-       <h2 className="md:font-stretch-50% md:text-4xl">Express js</h2>
-        </div>
-        <div className="w-26 h-16 bg-[#fde68a] rounded-2xl p-2 text-center shadow-md z-10">
-          <h2 className="md:font-stretch-50% md:text-4xl ">MongoDb</h2>
-        </div>
-         <div className="w-26 h-16 bg-[#fae4ca] rounded-2xl p-2 text-center shadow-md -rotate-2 mt-5">
-          <h2 className="md:font-stretch-50% md:text-4xl">Figma</h2>
-          {/* <p className="text-xs md:text-sm mt-2">Discover your brand voice</p> */}
-        </div>
-         <div className="w-26 h-16 bg-[#fde68a] rounded-2xl p-4 text-center shadow-md z-10">
-          <h2 className="md:font-stretch-50% md:text-4xl">AWS</h2>
-        </div>
+    <section className="bg-black py-16">
+      <div className="text-center mb-10">
+        <h2 className="text-4xl font-bold text-white">Tech Stack</h2>
+        <p className="text-gray-400 mt-2">
+          Technologies I use to design, build, and deploy scalable applications
+        </p>
       </div>
 
-       <div className="flex justify-center gap-6 m-10 ">
-        <div className="w-26 h-16 bg-[#fae4ca] rounded-2xl p-4 text-center shadow-md transform -rotate-1">
-        <h2 className="md:font-stretch-50% md:text-3xl">Vercel</h2>
-        </div>
-        <div className="w-26 h-16 bg-[#fde68a] rounded-2xl p-4 text-center shadow-md z-10">
-          <h2 className="md:font-stretch-50% md:text-4xl">Stripe</h2>
-        </div>
-        <div className="w-26 h-16 bg-[#fca5a5] rounded-2xl p-4 text-center shadow-md transform rotate-6">
-         <h2 className="md:font-stretch-50% md:text-3xl">Nextjs</h2>
-        </div>
-        <div className="w-26 h-16 bg-[#fde68a] rounded-2xl p-4 text-center shadow-md z-10">
-          <h2 className="md:font-stretch-50% md:text-4xl">GoDaddy</h2>
-        </div>
+      <div className="max-w-6xl mx-auto space-y-12">
+        {Object.entries(categories).map(([category, techs], idx) => (
+          <div key={idx}>
+            <h3 className="text-2xl font-semibold text-amber-400 mb-6">{category}</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+              {techs.map((tech, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col items-center p-6 bg-white rounded-2xl shadow-md 
+                             hover:shadow-amber-400/50 transition-transform hover:scale-105"
+                >
+                  <img
+                    src={tech.src}
+                    alt={tech.alt}
+                    className="h-16 w-16 mb-3 grayscale hover:grayscale-0 transition duration-300"
+                  />
+                  <p className="font-medium">{tech.alt}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 
